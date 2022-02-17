@@ -1,0 +1,26 @@
+.alert_balloon {
+  margin-top: 24px;
+  width: 239px;
+  height: 48px;
+  background-color: #b8a4a4;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  position: relative;
+}
+
+.alert_balloon:after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: 26px;
+    bottom: 42px;
+    position: absolute;
+    background: #b8a4a4;
+    transform: rotate(45deg);
+}
+
