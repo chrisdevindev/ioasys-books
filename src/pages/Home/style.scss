@@ -1,0 +1,152 @@
+.home_page {
+  width: 100%;
+  height: 100vh;
+
+  background: -webkit-radial-gradient(
+    rgba(255, 207, 226, 0.212),
+    rgba(255, 240, 255, 0.486)
+  );
+  background: radial-gradient(
+    rgba(255, 207, 226, 0.781),
+    rgba(255, 240, 255, 0.849)
+  );
+
+  .home_container {
+    padding: 1rem 6rem;
+    height: 100vh;
+
+    header {
+      width: 100%;
+      height: 8rem;
+      display: flex;
+      justify-content: space-between;
+
+      .logo_group {
+        display: flex;
+        align-items: center;
+        p {
+          font-size: 28px;
+          font-weight: 300;
+          margin-left: 16px;
+        }
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+
+        #logout {
+          width: 2.2rem;
+          height: 2.2rem;
+          border-radius: 50rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 1rem;
+          border-width: 1px;
+          border-color: #0707074a;
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .books {
+      grid-column-gap: 4rem;
+      grid-row-gap: 1em;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      grid-row-gap: 2em;
+    }
+  }
+
+  .pagination {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    #page_information {
+      margin-right: 2rem;
+    }
+    #pagination_back,
+    #pagination_next {
+      width: 32px;
+      height: 32px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000000;
+      border-color: #0707074a;
+      margin-right: 0.8rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+#exit{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.exitModal{
+  height: -webkit-fill-available;
+  display: grid;
+  align-content: space-between;
+}
+
+.close_modal_buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.exit_modal_description{
+  margin-top: 0.8rem;
+  font-size: 20px;
+}
+.ok_button{
+  width: 56px;
+  height: 42px;
+  color: #ffffff;
+  background-color: #842AAE;
+  cursor: pointer;
+  border-color: #842AAE;
+  font-weight: 500;
+}
+
+.ok_button:hover{
+  background-color: #71189b;
+  border-color: #71189b;
+}
+.cancel_button{
+  margin-right: 1rem;
+  width: 100px;
+  height: 42px;
+  border: 2px solid #842AAE;  
+  color: #842AAE;
+  background-color: #fff;
+  cursor: pointer; 
+  font-weight: 500;
+}
+
+.cancel_button:hover{
+  background-color: rgb(245, 228, 255);
+}

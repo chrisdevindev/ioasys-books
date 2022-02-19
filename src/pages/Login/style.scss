@@ -1,9 +1,10 @@
-body{
+.login_page{
     background-image: url("../../assets/images/ioasys-background.png");
     background-size: cover;
     height: 100vh;
 }
-.container{
+
+.login_container{
     height: 100vh;
     display: flex;
     flex-direction: column;
